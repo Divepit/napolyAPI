@@ -1,24 +1,18 @@
-# README
+# Empty Sandbox Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I'm using this project to have an empty sandbox version of a Ruby on Rails backend for a vue/rails api project.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-* System dependencies
+run
+```
+bundle install
+```
+and
+```
+rails db:migrate
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+and then check for TODO items in the project. They indicate where changes need to be done to customize the app in a new project.
