@@ -7,8 +7,9 @@ module Api
       # GET /links
       def index
         week = params[:linkWeek]
-        if week != "undefined"
-          @links = Link.where("linkWeek == #{week}")
+        subject = params[:subject_id]
+        if week != "undefined" && subject != "undefined"
+          @links = Link.where("linkWeek == #{week} AND subject_id == #{subject}")
         else
           @links = Link.all
         end
@@ -53,7 +54,7 @@ module Api
 
         # Only allow a trusted parameter "white list" through.
         def link_params
-          params.require(:link).permit(:linkUrl, :linkWeek)
+          params.require(:link).permit(:linkUrl, :linkWeek, :subject_id)
         end
     end
   end

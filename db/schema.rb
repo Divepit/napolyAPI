@@ -10,13 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190426201929) do
+ActiveRecord::Schema.define(version: 20190502192448) do
+
+  create_table "fields", force: :cascade do |t|
+    t.string "fieldName"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "links", force: :cascade do |t|
     t.string "linkUrl"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "linkWeek"
+    t.integer "subject_id"
+    t.index ["subject_id"], name: "index_links_on_subject_id"
+  end
+
+  create_table "semesters", force: :cascade do |t|
+    t.integer "semesterHalf"
+    t.integer "semesterYear"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "subjects", force: :cascade do |t|
+    t.string "subjectName"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
