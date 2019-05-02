@@ -6,8 +6,12 @@ module Api
 
       # GET /links
       def index
-        @links = Link.all
-
+        week = params[:linkWeek]
+        if week != "undefined"
+          @links = Link.where("linkWeek == #{week}")
+        else
+          @links = Link.all
+        end
         render json: @links
       end
 
