@@ -1,18 +1,12 @@
 module Api
   module V1
     class LinksController < ApplicationController
-      before_action :authorize_access_request!, except: [:show, :index]
+      before_action :authorize_access_request!
       before_action :set_link, only: [:show, :update, :destroy]
 
       # GET /links
       def index
-        week = params[:linkWeek]
-        subject = params[:subject_id]
-        if week != "undefined" && subject != "undefined"
-          @links = Link.where("linkWeek == #{week} AND subject_id == #{subject}")
-        else
           @links = Link.all
-        end
         render json: @links
       end
 
