@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       resources :links
       resources :types
       resources :subjects
+      resources :semesters
     end
   end
 
