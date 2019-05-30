@@ -8,7 +8,8 @@ module Api
       def index
         subject = params[:subject_id].to_s
         semester = params[:semester_id].to_s
-          @links = Link.where("subject_id = #{subject} AND semester_id = #{semester}")
+        field = params[:field_id].to_s
+          @links = Link.where("subject_id = #{subject} AND semester_id = #{semester} AND field_id = #{field}")
         render json: @links
       end
 

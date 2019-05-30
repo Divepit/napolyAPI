@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190524131432) do
+ActiveRecord::Schema.define(version: 20190530155956) do
 
   create_table "fields", force: :cascade do |t|
     t.string "fieldName"
@@ -46,6 +46,9 @@ ActiveRecord::Schema.define(version: 20190524131432) do
     t.datetime "updated_at", null: false
     t.integer "weekCount"
     t.integer "semester_id"
+    t.integer "field_id"
+    t.integer "year"
+    t.index ["field_id"], name: "index_subjects_on_field_id"
     t.index ["semester_id"], name: "index_subjects_on_semester_id"
   end
 

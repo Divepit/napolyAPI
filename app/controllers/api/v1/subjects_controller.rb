@@ -6,11 +6,9 @@ module Api
       # GET /subjects
       def index
         semester = params[:semester_id].to_s
-        if semester == "0" then
-          @subjects = Subject.all
-        else
-          @subjects = Subject.where("semester_id = #{semester}")
-        end
+        field = params[:field_id].to_s
+        year = params[:year].to_s
+        @subjects = Subject.where("semester_id = #{semester} AND field_id = #{field} AND year = #{year}")
         render json: @subjects
       end
 
@@ -52,7 +50,7 @@ module Api
 
         # Only allow a trusted parameter "white list" through.
         def subject_params
-          params.require(:subject).permit(:subjectName, :weekCount, :semester_id)
+          params.require(:subject).permit(:subjectName, :weekCount, :semester_id, :field_id, :year)
         end
     end
   end

@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       resources :types
       resources :subjects
       resources :semesters
+      resources :fields
     end
   end
 
