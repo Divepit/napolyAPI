@@ -1,6 +1,7 @@
 module Api
   module V1
     class SubjectsController < ApplicationController
+      before_action :authorize_access_request!, except: [:show, :index]
       before_action :set_subject, only: [:show, :update, :destroy]
 
       # GET /subjects
