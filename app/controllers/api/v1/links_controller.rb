@@ -7,9 +7,7 @@ module Api
       # GET /links
       def index
         subject = params[:subject_id].to_s
-        semester = params[:semester_id].to_s
-        field = params[:field_id].to_s
-          @links = Link.where("subject_id = #{subject} AND semester_id = #{semester} AND field_id = #{field}")
+          @links = Link.where("subject_id = #{subject}")
         render json: @links
       end
 
@@ -51,7 +49,7 @@ module Api
 
         # Only allow a trusted parameter "white list" through.
         def link_params
-          params.require(:link).permit(:linkUrl, :linkWeek, :subject_id, :semester_id, :field_id, :type_id)
+          params.require(:link).permit(:linkUrl, :linkWeek, :subject_id, :type_id)
         end
     end
   end

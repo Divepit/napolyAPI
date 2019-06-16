@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :buttons
   resources :types
   resources :fields
   resources :subjects
@@ -10,6 +11,7 @@ Rails.application.routes.draw do
       resources :subjects
       resources :semesters
       resources :fields
+      resources :buttons
     end
   end
 

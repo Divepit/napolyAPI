@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  buttonLabel: MyString
+  buttonUrl: MyString
+  subject: one
+
+two:
+  buttonLabel: MyString
+  buttonUrl: MyString
+  subject: two

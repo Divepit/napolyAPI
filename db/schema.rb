@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190530155956) do
+ActiveRecord::Schema.define(version: 20190616120944) do
+
+  create_table "buttons", force: :cascade do |t|
+    t.string "buttonLabel"
+    t.string "buttonUrl"
+    t.integer "subject_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["subject_id"], name: "index_buttons_on_subject_id"
+  end
 
   create_table "fields", force: :cascade do |t|
     t.string "fieldName"
@@ -24,11 +33,7 @@ ActiveRecord::Schema.define(version: 20190530155956) do
     t.datetime "updated_at", null: false
     t.integer "linkWeek"
     t.integer "subject_id"
-    t.integer "semester_id"
-    t.integer "field_id"
     t.integer "type_id"
-    t.index ["field_id"], name: "index_links_on_field_id"
-    t.index ["semester_id"], name: "index_links_on_semester_id"
     t.index ["subject_id"], name: "index_links_on_subject_id"
     t.index ["type_id"], name: "index_links_on_type_id"
   end

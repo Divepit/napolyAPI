@@ -1,4 +1,3 @@
 class Semester < ApplicationRecord
-  has_many :links
-  has_many :subjects
+  has_many :subjects, dependent: :destroy
 end
