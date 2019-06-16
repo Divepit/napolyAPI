@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190616120944) do
+ActiveRecord::Schema.define(version: 20190616160140) do
 
   create_table "buttons", force: :cascade do |t|
     t.string "buttonLabel"
@@ -25,6 +25,15 @@ ActiveRecord::Schema.define(version: 20190616120944) do
     t.string "fieldName"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "infos", force: :cascade do |t|
+    t.string "infoTitle"
+    t.text "infoText"
+    t.integer "subject_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["subject_id"], name: "index_infos_on_subject_id"
   end
 
   create_table "links", force: :cascade do |t|
