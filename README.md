@@ -29,7 +29,7 @@ rails s
 ```
 
 The API Seed which has been called with `rails db:reset` contains an example user with username `testuser@example.com` and password `password`. It also generates three Semesters and two departments so you are ready to add subjects.
-If you want to clean the database and return to this state run the command again.
+If you want to clean the database and return to this state, run the command again.
 
 ---
 ## License
