@@ -16,7 +16,7 @@
 ## Install
 
 ```sh
-bundle install &amp;&amp; rails db:migrate
+bundle install && rails db:migrate
 ```
 
 ## Usage
