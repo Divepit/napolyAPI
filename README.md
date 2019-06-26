@@ -17,8 +17,6 @@ To install the Ruby on Rails application run
 ```sh
 bundle install
 ```
-and
-
 ```sh
 rails db:reset
 ```
