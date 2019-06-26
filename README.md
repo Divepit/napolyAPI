@@ -10,7 +10,7 @@
 </p>
 
 > Ruby on Rails API for the Napoly Project
-
+---
 ## Install
 To install the Ruby on Rails application run
 
@@ -22,26 +22,24 @@ and
 ```sh
 rails db:reset
 ```
-
+---
 ## Usage
 The frontend APP for the NapolyAPI can be found [here](https://github.com/Divepit/napoly)
 
-Start the API with
+Start the API:
 ```sh
 rails s
 ```
-and make sure the redis token store is running. If it is not, you will not be able to log in to the app. The setup instructions for Redis can be found [here](https://redis.io/topics/quickstart).
+######Make sure the redis token store is running. If it is not, you will not be able to log in to the app. The setup instructions for Redis can be found [here](https://redis.io/topics/quickstart).
 
 The API Seed contains an example user with username `testuser@example.com` and password `password`.
 
 The API Seed also generates three Semesters and two departments so you are ready to add subjects.
-If you want to clean the database and return to this state, run
+If you want to clean the database and return to this state run:
 ```sh
 rails db:reset
 ```
-again.
-
-
+---
 ## License
 
 Copyright © 2019 [Marco Trentini](https://github.com/Divepit).<br />
