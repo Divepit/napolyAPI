@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to napolyAPI 👋</h1>
+<h1 align="center">The NapolyAPI</h1>
 <p>
   <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/Divepit/napolyAPI/wiki">
@@ -10,8 +10,6 @@
 </p>
 
 > Ruby on Rails API for the Napoly Project
-
-### 🏠 [Homepage](https://napoly.ch)
 
 ## Install
 To install the Ruby on Rails application run
@@ -45,11 +43,11 @@ again.
 
 ## Author
 
-👤 **Marco Trentini**
+**Marco Trentini**
 
 * Github: [@Divepit](https://github.com/Divepit)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Divepit/napolyAPI/issues).
 
@@ -57,7 +55,7 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 
 Give a ⭐️ if this project helped you!
 
-## 📝 License
+## License
 
 Copyright © 2019 [Marco Trentini](https://github.com/Divepit).<br />
 This project is [MIT License](https://opensource.org/licenses/MIT) licensed.
