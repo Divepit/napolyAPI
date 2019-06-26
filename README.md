@@ -30,7 +30,7 @@ Start the API:
 ```sh
 rails s
 ```
-######Make sure the redis token store is running. If it is not, you will not be able to log in to the app. The setup instructions for Redis can be found [here](https://redis.io/topics/quickstart).
+###### Make sure the redis token store is running. If it is not, you will not be able to log in to the app. The setup instructions for Redis can be found [here](https://redis.io/topics/quickstart).
 
 The API Seed contains an example user with username `testuser@example.com` and password `password`.
 
