@@ -43,6 +43,3 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2019 [Marco Trentini](https://github.com/Divepit).<br />
 This project is [MIT License](https://opensource.org/licenses/MIT) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
