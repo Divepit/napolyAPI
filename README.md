@@ -32,6 +32,13 @@ The API Seed which has been called with `rails db:reset` contains an example use
 If you want to clean the database and return to this state, run the command again.
 
 ---
+
+## Support the Project!
+
+Would you like to support the Napoly Team by chipping in for a coffee, a beer or even parts of the server and domain fee? We're happy about any help we can get!
+
+### [Donate](https://donorbox.org/napoly)
+---
 ## License
 
 Copyright © 2019 [Marco Trentini](https://github.com/Divepit).<br />
