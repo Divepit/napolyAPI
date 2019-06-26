@@ -21,22 +21,16 @@ bundle install
 rails db:reset
 ```
 ---
-## Usage
-The frontend APP for the NapolyAPI can be found [here](https://github.com/Divepit/napoly)
+## Usage (The frontend APP for the NapolyAPI can be found [here](https://github.com/Divepit/napoly))
+Make sure the redis token store is running. If it is not, you will not be able to log in to the app. The setup instructions for Redis can be found [here](https://redis.io/topics/quickstart). Once it is running you can start the API:
 
-Start the API:
 ```sh
 rails s
 ```
-Make sure the redis token store is running. If it is not, you will not be able to log in to the app. The setup instructions for Redis can be found [here](https://redis.io/topics/quickstart).
 
-The API Seed contains an example user with username `testuser@example.com` and password `password`.
+The API Seed which has been called with `rails db:reset` contains an example user with username `testuser@example.com` and password `password`. It also generates three Semesters and two departments so you are ready to add subjects.
+If you want to clean the database and return to this state run the command again.
 
-The API Seed also generates three Semesters and two departments so you are ready to add subjects.
-If you want to clean the database and return to this state run:
-```sh
-rails db:reset
-```
 ---
 ## License
 
