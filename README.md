@@ -41,19 +41,6 @@ rails db:reset
 ```
 again.
 
-## Author
-
-**Marco Trentini**
-
-* Github: [@Divepit](https://github.com/Divepit)
-
-## Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Divepit/napolyAPI/issues).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
 
 ## License
 
