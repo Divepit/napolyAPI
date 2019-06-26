@@ -9,7 +9,7 @@
   </a>
 </p>
 
-> Ruby on Rails API for the Napoly Project
+> Ruby on Rails API for the [Napoly Project](https://github.com/Divepit/napoly)
 ---
 ## Install
 To install the Ruby on Rails application run
@@ -21,7 +21,7 @@ bundle install
 rails db:reset
 ```
 ---
-## Usage (The frontend APP for the NapolyAPI can be found [here](https://github.com/Divepit/napoly))
+## Usage
 Make sure the redis token store is running. If it is not, you will not be able to log in to the app. The setup instructions for Redis can be found [here](https://redis.io/topics/quickstart). Once it is running you can start the API:
 
 ```sh
