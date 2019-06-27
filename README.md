@@ -22,7 +22,7 @@ rails db:reset
 ```
 ---
 ## Usage
-Make sure the redis token store is running. If it is not, you will not be able to log in to the app. The setup instructions for Redis can be found [here](https://redis.io/topics/quickstart). Once it is running you can start the API:
+Make sure the redis token store is running. If it is not, you will not be able to log in to the app. The setup instructions for Redis can be found [here](https://redis.io/topics/quickstart). In case you're using a mac and homebrew, [this](https://medium.com/@petehouston/install-and-config-redis-on-mac-os-x-via-homebrew-eb8df9a4f298) will make your life a lot easier. Once redis is running, you can start the API:
 
 ```sh
 rails s
