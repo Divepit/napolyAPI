@@ -20,27 +20,33 @@ module Api
 
       # POST /users
       def create
-        @user = User.new(user_params)
+        if @current_user.role == 1
+          @user = User.new(user_params)
 
-        if @user.save
-          render json: @user, status: :created, location: @user
-        else
-          render json: @user.errors, status: :unprocessable_entity
+          if @user.save
+            render json: @user, status: :created, location: @user
+          else
+            render json: @user.errors, status: :unprocessable_entity
+          end
         end
       end
 
       # PATCH/PUT /users/1
       def update
-        if @user.update(user_params)
-          render json: @user
-        else
-          render json: @user.errors, status: :unprocessable_entity
+        if @current_user.role == 1
+          if @user.update(user_params)
+            render json: @user
+          else
+            render json: @user.errors, status: :unprocessable_entity
+          end
         end
       end
 
       # DELETE /users/1
       def destroy
-        @user.destroy
+        if @current_user.role == 1
+          @user.destroy
+        end
       end
 
       private
@@ -51,7 +57,7 @@ module Api
 
         # Only allow a trusted parameter "white list" through.
         def user_params
-          params.require(:user).permit(:userName)
+          params.require(:user).permit(:email, :password, :password_confirmation, :role)
         end
 
         def current_user
