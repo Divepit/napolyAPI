@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190616160140) do
+ActiveRecord::Schema.define(version: 20190630220236) do
 
   create_table "buttons", force: :cascade do |t|
     t.string "buttonLabel"
@@ -77,7 +77,7 @@ ActiveRecord::Schema.define(version: 20190616160140) do
     t.string "password_digest", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "role", default: 0
+    t.integer "role"
   end
 
 end
