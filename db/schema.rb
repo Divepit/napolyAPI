@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190630220236) do
+ActiveRecord::Schema.define(version: 20190714144651) do
 
   create_table "buttons", force: :cascade do |t|
     t.string "buttonLabel"
@@ -78,6 +78,8 @@ ActiveRecord::Schema.define(version: 20190630220236) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "role"
+    t.integer "field_id"
+    t.index ["field_id"], name: "index_users_on_field_id"
   end
 
 end
