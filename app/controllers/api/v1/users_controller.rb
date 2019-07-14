@@ -9,8 +9,11 @@ module Api
       def index
         if @current_user.role == 1
           @users = User.all
-          render json: @users
+        else
+          @users = User.where("id == #{@current_user.id}")
         end
+        render json: @users
+
       end
 
       # GET /users/1
@@ -57,7 +60,11 @@ module Api
 
         # Only allow a trusted parameter "white list" through.
         def user_params
-          params.require(:user).permit(:email, :password, :password_confirmation, :role, :field_id)
+          if @current_user.role == 1
+            params.require(:user).permit(:email, :password, :password_confirmation, :role, :field_id)
+          else
+            params.require(:user).permit(:email, :password, :password_confirmation)
+          end
         end
 
         def current_user
