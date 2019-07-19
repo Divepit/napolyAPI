@@ -42,7 +42,11 @@ ActiveRecord::Schema.define(version: 20190714144651) do
     t.datetime "updated_at", null: false
     t.integer "linkWeek"
     t.integer "subject_id"
+    t.integer "semester_id"
+    t.integer "field_id"
     t.integer "type_id"
+    t.index ["field_id"], name: "index_links_on_field_id"
+    t.index ["semester_id"], name: "index_links_on_semester_id"
     t.index ["subject_id"], name: "index_links_on_subject_id"
     t.index ["type_id"], name: "index_links_on_type_id"
   end
