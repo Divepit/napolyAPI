@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :buttons
+  resources :links
+  resources :infos
+  resources :users
+
+
   namespace :api do
     namespace :v1 do
       resources :links
