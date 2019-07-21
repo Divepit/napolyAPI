@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :links
   resources :infos
   resources :users
-
+  resources :subjects
 
   namespace :api do
     namespace :v1 do
