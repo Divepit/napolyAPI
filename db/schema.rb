@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190714144651) do
+ActiveRecord::Schema.define(version: 20190718212218) do
 
   create_table "buttons", force: :cascade do |t|
     t.string "buttonLabel"
@@ -62,7 +62,6 @@ ActiveRecord::Schema.define(version: 20190714144651) do
     t.string "subjectName"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "weekCount"
     t.integer "semester_id"
     t.integer "field_id"
     t.integer "year"

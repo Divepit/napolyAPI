@@ -41,6 +41,15 @@ module Api
         @link.destroy
       end
 
+      # PATCH/PUT /links/type
+      def type
+        if Link.where("subject_id = #{params[:subject_id]} AND type_id = #{params[:type_old]}").update_all(type_id: params[:type_new])
+          render status: :ok
+        else
+          render status: :unprocessable_entity
+        end
+      end
+
       private
         # Use callbacks to share common setup or constraints between actions.
         def set_link

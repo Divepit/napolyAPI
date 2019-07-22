@@ -51,7 +51,7 @@ module Api
 
         # Only allow a trusted parameter "white list" through.
         def subject_params
-          params.require(:subject).permit(:subjectName, :weekCount, :semester_id, :field_id, :year)
+          params.require(:subject).permit(:subjectName, :semester_id, :field_id, :year)
         end
     end
   end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   resources :buttons
   resources :links
   resources :infos
@@ -7,6 +8,9 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
+
+      patch '/links/type', controller: :links, action: :type
+
       resources :links
       resources :types
       resources :subjects
@@ -15,6 +19,7 @@ Rails.application.routes.draw do
       resources :infos
       resources :buttons
       resources :users
+
     end
   end
 
@@ -22,4 +27,5 @@ Rails.application.routes.draw do
   post 'signin', controller: :signin, action: :create
   post 'signup', controller: :signup, action: :create
   delete 'signin', controller: :signin, action: :destroy
+
 end
