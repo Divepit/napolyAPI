@@ -2,7 +2,7 @@ module Api
   module V1
     class SubjectsController < ApplicationController
       before_action :authorize_access_request!, except: [:show, :index]
-      before_action :set_subject, only: [:show, :update, :destroy]
+      before_action :set_subject, only: [:show, :update, :destroy, :startWeek]
 
       # GET /subjects
       def index
@@ -43,6 +43,15 @@ module Api
         @subject.destroy
       end
 
+      def startWeek
+        Link.where("subject_id = #{params[:id]}").update_all("linkWeek = linkWeek + #{params[:subject][:startWeek]-(@subject.startWeek)}")
+        if @subject.update(subject_params)
+          render json: @subject
+        else
+          render json: @subject.errors, status: :unprocessable_entity
+        end
+      end
+
       private
         # Use callbacks to share common setup or constraints between actions.
         def set_subject
@@ -51,7 +60,7 @@ module Api
 
         # Only allow a trusted parameter "white list" through.
         def subject_params
-          params.require(:subject).permit(:subjectName, :semester_id, :field_id, :year)
+          params.require(:subject).permit(:subjectName, :startWeek, :semester_id, :field_id, :year)
         end
     end
   end
