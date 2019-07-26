@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     namespace :v1 do
 
       patch '/links/type', controller: :links, action: :type
+      patch '/subjects/:id/startWeek', controller: :subjects, action: :startWeek
 
       resources :links
       resources :types
