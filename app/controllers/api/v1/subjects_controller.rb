@@ -9,7 +9,11 @@ module Api
         semester = params[:semester_id].to_s
         field = params[:field_id].to_s
         year = params[:year].to_s
-        @subjects = Subject.where("semester_id = #{semester} AND field_id = #{field} AND year = #{year}")
+        if (semester != "" && field != "" && year != "")
+          @subjects = Subject.where("semester_id = #{semester} AND field_id = #{field} AND year = #{year}")
+        else
+          @subjects = Subject.all
+        end
         render json: @subjects
       end
 
