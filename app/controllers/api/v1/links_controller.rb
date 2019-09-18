@@ -7,7 +7,12 @@ module Api
       # GET /links
       def index
         subject = params[:subject_id].to_s
+        if subject != ""
           @links = Link.where("subject_id = #{subject}")
+        else
+          @links = Link.all
+        end
+
         render json: @links
       end
 
