@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190724123551) do
+ActiveRecord::Schema.define(version: 20190918193908) do
 
   create_table "buttons", force: :cascade do |t|
     t.string "buttonLabel"
@@ -45,6 +45,8 @@ ActiveRecord::Schema.define(version: 20190724123551) do
     t.integer "semester_id"
     t.integer "field_id"
     t.integer "type_id"
+    t.string "creator"
+    t.string "editor"
     t.index ["field_id"], name: "index_links_on_field_id"
     t.index ["semester_id"], name: "index_links_on_semester_id"
     t.index ["subject_id"], name: "index_links_on_subject_id"

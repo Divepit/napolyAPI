@@ -63,7 +63,7 @@ module Api
 
         # Only allow a trusted parameter "white list" through.
         def link_params
-          params.require(:link).permit(:linkUrl, :linkWeek, :subject_id, :type_id)
+          params.require(:link).permit(:linkUrl, :linkWeek, :subject_id, :type_id, :creator, :editor)
         end
     end
   end

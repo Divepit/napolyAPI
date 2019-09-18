@@ -11,7 +11,7 @@ class SigninController < ApplicationController
                         value: tokens[:access],
                         httponly: true,
                         secure: Rails.env.production?)
-      render json: { csrf: tokens[:csrf], id: user.id, role: user.role, field_id: user.field_id }
+      render json: { csrf: tokens[:csrf], id: user.id, role: user.role, field_id: user.field_id, username: user.email }
     else
       not_authorized
     end
