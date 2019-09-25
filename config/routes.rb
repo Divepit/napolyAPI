@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :infos
   resources :users
   resources :subjects
+  resources :fields
+
 
   namespace :api do
     namespace :v1 do
