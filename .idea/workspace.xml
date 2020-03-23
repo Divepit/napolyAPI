@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="095da6cf-0a75-4724-8dd4-3b63163e3f3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/napolyAPI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/links_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/links_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +33,62 @@
     <option name="myCommands">
       <command value="git branch staging" />
       <command value="git checkout staging" />
+      <command value="git add -A" />
+      <command value="git commit -am &quot;staging branch&quot;" />
       <command value="git status" />
+      <command value="git push" />
+      <command value="git push --set-upstream origin staging" />
+      <command value="rails s" />
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Napoly API" type="RailsRunConfigurationType" factoryName="Rails">
+      <module name="napolyAPI" />
+      <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="true" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="rbenv: 2.6.3" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="$MODULE_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="puma" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="RailsRunConfigurationType" factoryName="Rails">
+      <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="true" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="rbenv: 2.6.3" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="$PROJECT_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -46,7 +97,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580971215855</updated>
-      <workItem from="1580971220547" duration="3253000" />
+      <workItem from="1580971220547" duration="6236000" />
+      <workItem from="1581514969192" duration="1127000" />
+      <workItem from="1581921263987" duration="526000" />
     </task>
     <servers />
   </component>
@@ -54,26 +107,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="304" y="198" width="1071" height="732" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581231492522">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="304" y="198" width="1071" height="732" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1581231492522" />
     <state x="411" y="51" key="CommitChangelistDialog2" timestamp="1581227876732">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="411" y="51" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1581227876732" />
-    <state width="1638" height="261" key="GridCell.Tab.0.bottom" timestamp="1581227866519">
+    <state width="1638" height="261" key="GridCell.Tab.0.bottom" timestamp="1581231595025">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="261" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1581227866519" />
-    <state width="1638" height="261" key="GridCell.Tab.0.center" timestamp="1581227866518">
+    <state width="1638" height="261" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1581231595025" />
+    <state width="1638" height="261" key="GridCell.Tab.0.center" timestamp="1581231595024">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="261" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1581227866518" />
-    <state width="1638" height="261" key="GridCell.Tab.0.left" timestamp="1581227866518">
+    <state width="1638" height="261" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1581231595024" />
+    <state width="1638" height="261" key="GridCell.Tab.0.left" timestamp="1581231595024">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="261" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1581227866518" />
-    <state width="1638" height="261" key="GridCell.Tab.0.right" timestamp="1581227866519">
+    <state width="1638" height="261" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1581231595024" />
+    <state width="1638" height="261" key="GridCell.Tab.0.right" timestamp="1581231595025">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="261" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1581227866519" />
+    <state width="1638" height="261" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1581231595025" />
     <state x="349" y="175" key="SettingsEditor" timestamp="1581052485556">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -82,9 +139,9 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="628" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.1027@0.23.1680.1027" timestamp="1581227813487" />
-    <state x="505" y="248" width="670" height="675" key="run.anything.popup" timestamp="1581227859054">
+    <state x="505" y="248" width="670" height="675" key="run.anything.popup" timestamp="1581231522166">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="505" y="248" width="670" height="675" key="run.anything.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1581227859054" />
+    <state x="505" y="248" width="670" height="675" key="run.anything.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1581231522166" />
   </component>
 </project>
