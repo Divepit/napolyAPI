@@ -21,7 +21,7 @@ module Api
         @field = Field.new(field_params)
 
         if @field.save
-          render json: @field, status: :created, location: @field
+          render json: @field, status: :created, location: api_v1_field_url(@field)
         else
           render json: @field.errors, status: :unprocessable_entity
         end

@@ -21,7 +21,7 @@ module Api
         @button = Button.new(button_params)
 
         if @button.save
-          render json: @button, status: :created, location: @button
+          render json: @button, status: :created, location: api_v1_button_url(@button)
         else
           render json: @button.errors, status: :unprocessable_entity
         end

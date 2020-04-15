@@ -27,7 +27,7 @@ module Api
         @subject = Subject.new(subject_params)
 
         if @subject.save
-          render json: @subject, status: :created, location: @subject
+          render json: @subject, status: :created, location: api_v1_subject_url(@subject)
         else
           render json: @subject.errors, status: :unprocessable_entity
         end
