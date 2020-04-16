@@ -27,7 +27,7 @@ module Api
           @user = User.new(user_params)
 
           if @user.save
-            render json: @user, status: :created, location: @user
+            render json: @user, status: :created, location: api_v1_user_url(@user)
           else
             render json: @user.errors, status: :unprocessable_entity
           end
@@ -37,11 +37,14 @@ module Api
       # PATCH/PUT /users/1
       def update
         if (@current_user.role == 1 || @current_user.id == @user.id)
-          if @user.update(user_params)
-            render json: @user
-          else
-            render json: @user.errors, status: :unprocessable_entity
-          end
+        if (params[:password] && params[:password_confirmation])
+          @user.password = params[:password]
+          @user.password_confirmation = params[:password_confirmation]
+          @user.save!
+        end
+        if !(@user.update(user_params))
+          render json: @user.errors, status: :unprocessable_entity
+        end
         end
       end
 

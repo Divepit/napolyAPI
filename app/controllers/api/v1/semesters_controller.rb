@@ -21,7 +21,7 @@ module Api
         @semester = Semester.new(semester_params)
 
         if @semester.save
-          render json: @semester, status: :created, location: @semester
+          render json: @semester, status: :created, location: api_v1_semester_url(@semester)
         else
           render json: @semester.errors, status: :unprocessable_entity
         end

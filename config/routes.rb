@@ -1,18 +1,7 @@
 Rails.application.routes.draw do
 
-  resources :buttons
-  resources :links
-  resources :infos
-  resources :users
-  resources :subjects
-  resources :fields
-
-
   namespace :api do
     namespace :v1 do
-
-      patch '/links/type', controller: :links, action: :type
-      patch '/subjects/:id/startWeek', controller: :subjects, action: :startWeek
 
       resources :links
       resources :types

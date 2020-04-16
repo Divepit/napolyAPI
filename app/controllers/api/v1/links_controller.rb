@@ -12,8 +12,7 @@ module Api
         else
           @links = Link.all
         end
-
-        render json: @links
+        render json: @links, :except => [:semester_id, :field_id]
       end
 
       # GET /links/1

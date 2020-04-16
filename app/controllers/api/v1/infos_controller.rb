@@ -22,7 +22,7 @@ module Api
         @info = Info.new(info_params)
 
         if @info.save
-          render json: @info, status: :created, location: @info
+          render json: @info, status: :created, location: api_v1_info_url(@info)
         else
           render json: @info.errors, status: :unprocessable_entity
         end
