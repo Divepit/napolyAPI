@@ -14,4 +14,12 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
       credentials: true,
       methods: [:get, :post, :put, :patch, :delete, :options, :head]
   end
+  allow do
+    origins ['http://n.ethz.ch']
+
+    resource '*',
+      headers: :any,
+      credentials: true,
+      methods: [:get]
+  end
 end
