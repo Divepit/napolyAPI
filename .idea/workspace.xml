@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="095da6cf-0a75-4724-8dd4-3b63163e3f3c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/links_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/links_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/cors.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/cors.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +89,21 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="095da6cf-0a75-4724-8dd4-3b63163e3f3c" name="Default Changelist" comment="" />
@@ -100,6 +114,8 @@
       <workItem from="1580971220547" duration="6236000" />
       <workItem from="1581514969192" duration="1127000" />
       <workItem from="1581921263987" duration="526000" />
+      <workItem from="1588832875304" duration="351000" />
+      <workItem from="1588840379628" duration="175000" />
     </task>
     <servers />
   </component>
